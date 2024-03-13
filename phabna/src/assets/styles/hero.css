@@ -1,0 +1,10 @@
+.hero-wrapper {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    top:-180px;
+    width: 100%;
+    height: 880px;
+}
