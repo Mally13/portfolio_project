@@ -1,0 +1,26 @@
+.campaign {
+    margin-top: 640px;
+    display: flex;
+    flex-direction: row; 
+    height: 120px;
+}
+.campaign-box {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+    justify-content: space-between; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.campaign-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 16px;
+}
+.campaign-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -9,7 +9,6 @@ body {
     align-content: center;
   }
   
-  /* Optionally, you can apply Inter font to certain elements */
 h1, h2, h3, h4, h5, p {
     font-family: 'Inter', sans-serif;
 }
@@ -19,3 +18,23 @@ h1, h2, h3, h4, h5, p {
   border-bottom: 2px solid #d9d9d9;
   margin: auto;
 }
+
+@media screen and (max-width: 400px) {
+  #features {
+    padding: 20px;
+    width: 111%;
+  }
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact,
+  #footer {
+    width: 111%;
+  }
+
+  #portfolio {
+    width: 110%;
+  }
+}
+

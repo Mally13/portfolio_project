@@ -1,16 +1,21 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Campaign from './components/Campaign';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import "./App.css"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Hero/>
-      <Campaign/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
 export default App;
