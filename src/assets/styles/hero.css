@@ -1,5 +1,6 @@
 .hero-wrapper {
-    background-image: url(../images/hero.jpg);
+    background: url(../images/hero.jpg);
+    background-color: rgba(23, 36, 50, 0.8);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
