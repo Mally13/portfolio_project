@@ -5,9 +5,11 @@ import '../assets/styles/hero.css'
 
 function Hero() {
   return (
-    <div className='hero-wrapper'>
-        <FlightSearch/>
-        <ReveiwBox/>
+    <div>
+      <div className='hero-wrapper'>
+          <FlightSearch/>
+          <ReveiwBox/>
+      </div>
     </div>
   )
 }

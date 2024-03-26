@@ -37,7 +37,7 @@ const Slide = ({ title, city, image }) => {
   );
 };
 
-const Offers = ({name, text, content}) => {
+const Destinations = ({name, text, content}) => {
   var settings = {
     // dots: true,
     infinite: false,
@@ -76,15 +76,16 @@ const Offers = ({name, text, content}) => {
     <div className='container'>
       <div className="slideshow-wrapper">
         <div className='slideshow-header'>
-          <div className='slideshow-text offers'>
+          <div className='slideshow-text'>
               <h2>
-                  Special Offers
+                  Popular Destinations
               </h2>
               <div className='text-inner'>
                 <p>
-                Check out our special offers and discounts                </p>
+                    Most popular destinations around the world, from historical places to natural wonders.
+                </p>
                 <div className='slides-nav'>
-                  
+
                 </div>
               </div>
           </div>
@@ -99,4 +100,4 @@ const Offers = ({name, text, content}) => {
   );
 };
 
-export default Offers;
+export default Destinations;

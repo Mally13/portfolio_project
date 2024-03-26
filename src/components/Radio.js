@@ -3,8 +3,13 @@ import '../assets/styles/radio.css';
 
 function Radio() {
   const [selectedOption, setSelectedOption] = useState("return");
-  const selected = "#FECE48"
-  const unselected = "#FFFFFF"
+  const selected = {
+    backgroundColor:"#C1721B",
+    color:"#fff"
+  }
+  const unselected = {
+    backgroundColor:"#fff"
+  }
 
 
   const handleOptionChange = (value) => {
@@ -14,7 +19,7 @@ function Radio() {
 
   return (
     <div className="custom-radio">
-      <label style={{backgroundColor:selectedOption === "return" ? selected :unselected}}>
+      <label style={selectedOption === "return" ? selected :unselected}>
         <input
           type="radio"
           value="return"
@@ -23,7 +28,7 @@ function Radio() {
         />
         Return
       </label>
-      <label style={{backgroundColor:selectedOption === "oneway" ? selected :unselected}}>
+      <label style={selectedOption === "oneway" ? selected :unselected}>
         <input
           type="radio"
           value="oneway"
