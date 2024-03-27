@@ -613,3 +613,6 @@ label {
     margin: 50px 0;
   }
 }
+.slick-next:before, .slick-prev:before {
+  color: #172432 !important;
+}
