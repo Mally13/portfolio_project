@@ -6,6 +6,7 @@ import Destinations from '../components/Destinations'
 import Offers from '../components/Offers'
 import Blog from '../components/Blog'
 import TripPlanner from '../components/TripPlanner'
+import Footer from '../components/Footer'
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
         <Offers/>
         <Blog/>
         <TripPlanner/>
+        <Footer/>
     </div>
   )
 }
