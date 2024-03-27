@@ -61,12 +61,10 @@ const styles = {
     marginRight:"40px"
   },
   navList: {
-    display:'none',
-    position:'absolute',
     listStyle: 'none',
     padding: 0,
     margin: 0,
-    display: 'flex',
+    display: 'none',
     alignItems: 'center',
     zIndex:999999,
     position:'relative'
