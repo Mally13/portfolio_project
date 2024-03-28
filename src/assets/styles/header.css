@@ -45,3 +45,18 @@
     width: 22px;
     height: 22px;
 }
+.signin {
+    margin-top: 16px;
+}
+.signin h2 {
+    text-transform: capitalize;
+}
+.signinbtn {
+    background: #C1721B;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #C1721B;
+    padding: 10px 8px;
+    color: #fff;
+}

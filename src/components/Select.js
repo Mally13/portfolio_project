@@ -1,8 +1,26 @@
-import React, { useState } from 'react';
-import '../assets/styles/select.css'
-const Select = ({ options, onSelect, placeholder, defaultValue, }) => {
+import React, { useState, useEffect, useRef } from 'react';
+import '../assets/styles/select.css';
+
+const Select = ({ options, onSelect, placeholder, defaultValue }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(defaultValue);
+  const selectRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (selectRef.current && !selectRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    // Add event listener when component mounts
+    document.addEventListener('click', handleClickOutside);
+
+    // Cleanup event listener when component unmounts
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
 
   const toggleSelect = () => {
     setIsOpen(!isOpen);
@@ -15,7 +33,7 @@ const Select = ({ options, onSelect, placeholder, defaultValue, }) => {
   };
 
   return (
-    <div className="custom-select">
+    <div className="custom-select" ref={selectRef}>
       <div className={selectedOption ? "selected-option" : "placeholder"} onClick={toggleSelect}>
         {selectedOption ? selectedOption.label : placeholder}
       </div>
