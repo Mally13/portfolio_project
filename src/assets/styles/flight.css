@@ -95,3 +95,30 @@
     margin-left: 18px;
     font-size: 12px;
 }
+.react-datepicker-ignore-onclickoutside {
+    padding: 10px 10px 0 10px; 
+    width: 100%;
+    border:0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color:#172432;
+    position: absolute;
+    top:-24px;
+}
+
+.react-datepicker__input-container input{
+    padding: 10px 10px 0 12px; 
+    width: 100%;
+    border:0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color:#172432;
+    position: absolute;
+    top:-24px;
+    
+}
+.react-datepicker-popper {
+    top:40px !important;
+}

@@ -12,7 +12,12 @@ const AirportContextProvider = ({ children }) => {
     const fetchAirports = async () => {
       try {
         const response = await axios.get(
-          'https://api.amadeus.com/v1/reference-data/locations?type=AIRPORT'
+          'https://api.amadeus.com/v1/reference-data/locations?type=AIRPORT',
+          {
+            headers: {
+              'Authorization': `Bearer ${process.env.API_KEY}`
+            }
+          }
         );
         setAirports(response.data);
         setLoading(false);
